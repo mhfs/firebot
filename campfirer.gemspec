@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Marcelo Silveira"]
   s.email       = "marcelo@mhfs.com.br"
   s.homepage    = "https://github.com/mhfs/campfirer"
-  s.summary     = "Extensible bot to integrate Campfire with other applications/services"
-  s.description = "Extensible bot to integrate Campfire with other applications/services"
+  s.summary     = "Extensible Campfire bot to integrate with other applications/services"
+  s.description = "Extensible Campfire bot to integrate with other applications/services"
 
   s.rubyforge_project = "campfirer"
 
