@@ -1,0 +1,3 @@
+module Campfirer
+  # Your code goes here...
+end
