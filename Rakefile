@@ -1,5 +1,9 @@
+$LOAD_PATH.unshift 'lib'
+
 require 'bundler'
 require "rspec/core/rake_task"
+
+require "campfirer/tasks"
 
 Bundler::GemHelper.install_tasks
 
