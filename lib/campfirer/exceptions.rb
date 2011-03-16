@@ -1,4 +1,3 @@
 module Campfirer
-  class UnauthorizedException < Exception
-  end
+  UnauthorizedException = Class.new(StandardError)
 end
