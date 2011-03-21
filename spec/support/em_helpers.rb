@@ -11,7 +11,7 @@ def consume_stream
   port = 4321
   EM.run {
     EM.start_server host, port, JSONServer
-    Campfirer::Listener.connect(Campfirer::Settings.all)
+    Campfirer::Listener.connect(Campfirer::Settings.stream_settings)
     EM.add_timer(0.01){ EM.stop }
   }
 end

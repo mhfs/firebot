@@ -2,15 +2,7 @@ module Campfirer
   class Listener < Twitter::JSONStream
     def self.connect(options = {})
       Campfire.join_room
-
-      twitter_stream_options = {
-        :path => "/room/#{options[:room_id]}/live.json",
-        :host => options[:stream_host],
-        :port => options[:stream_port],
-        :auth => "#{options[:token]}:x"
-      }
-
-      conn = super(twitter_stream_options)
+      conn = super(options)
 
       conn.each_item do |message|
         Runner.execute(message)

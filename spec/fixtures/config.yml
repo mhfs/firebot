@@ -1,0 +1,7 @@
+account: "test"
+room_id: "123"
+path: "/room/123/live.json"
+token: "12345"
+stream_host: "127.0.0.1"
+stream_port: 4321
+host: "campfirenow.com"

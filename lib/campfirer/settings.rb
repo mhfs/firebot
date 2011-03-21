@@ -1,22 +1,28 @@
 module Campfirer
-  class Settings
-    # FIXME this is a temporary test solution until I move it to a config file
-    OPTIONS = {
-      :account     => "mhfs",
-      :room_id     => "355045",
-      :path        => "/room/355045/live.json",
-      :token       => "507f768a751c2271d0c5459f8bb32b157fe4ec40", # dummy user locked into test room
-      :stream_host => "streaming.campfirenow.com",
-      :stream_port => 80,
-      :host        => "campfirenow.com"
-    }
-
+  module Settings
     def self.all
-      OPTIONS
+      @settings ||= YAML.load(File.read(config_path)).to_hash
     end
 
     def self.[](key)
-      all[key]
+      all[key.to_s]
+    end
+
+    def self.config_path
+      @config_path ||= "~/.campfirer"
+    end
+
+    def self.config_path=(path)
+      @config_path = path
+    end
+
+    def self.stream_settings
+      {
+        :path => "/room/#{self[:room_id]}/live.json",
+        :host => self[:stream_host],
+        :port => self[:stream_port],
+        :auth => "#{self[:token]}:x"
+      }
     end
   end
 end
