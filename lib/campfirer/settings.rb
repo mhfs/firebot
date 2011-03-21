@@ -1,7 +1,7 @@
 module Campfirer
   module Settings
     def self.all
-      @settings ||= YAML.load(File.read(config_path)).to_hash
+      @settings ||= YAML.load(File.read(File.expand_path(config_path))).to_hash
     end
 
     def self.[](key)
