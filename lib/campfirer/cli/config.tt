@@ -1,0 +1,7 @@
+account: "your_subdomain"
+room_id: "your_room_id"
+path: "/room/your_room_id/live.json"
+token: "your_api_token"
+stream_host: "streaming.campfirenow.com"
+stream_port: 80
+host: "campfirenow.com"
