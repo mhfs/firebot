@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "twitter-stream", "~> 0.1.10"
   s.add_dependency "faraday",        "~> 0.5.7"
+  s.add_dependency "yajl-ruby",      "~> 0.8.1"
   s.add_dependency "daemons",        "~> 1.1.0"
   s.add_dependency "thor",           "~> 0.14.6"
 
