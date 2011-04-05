@@ -1,4 +1,4 @@
-module Campfirer
+module Firebot
   module Settings
     def self.all
       @settings ||= YAML.load(File.read(File.expand_path(config_path))).to_hash
@@ -9,7 +9,7 @@ module Campfirer
     end
 
     def self.config_path
-      @config_path ||= "~/.campfirer"
+      @config_path ||= "~/.firebot"
     end
 
     def self.config_path=(path)

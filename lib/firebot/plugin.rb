@@ -1,11 +1,11 @@
-module Campfirer
+module Firebot
   class Plugin
     class << self
       attr_accessor :commands
     end
 
     def self.trigger(identifier)
-      Campfirer.register_plugin(identifier, self)
+      Firebot.register_plugin(identifier, self)
     end
 
     def self.command(command, regex)

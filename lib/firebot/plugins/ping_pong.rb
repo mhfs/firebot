@@ -1,4 +1,4 @@
-module Campfirer
+module Firebot
   class PingPong < Plugin
 
     trigger :pp

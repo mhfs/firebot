@@ -1,7 +1,7 @@
 require "spec_helper"
 
-describe Campfirer::Runner do
+describe Firebot::Runner do
   it "should respond to execute" do
-    Campfirer::Runner.should respond_to(:execute)
+    Firebot::Runner.should respond_to(:execute)
   end
 end

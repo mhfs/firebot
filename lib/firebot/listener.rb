@@ -1,4 +1,4 @@
-module Campfirer
+module Firebot
   class Listener < Twitter::JSONStream
     def self.connect(options = {})
       Campfire.join_room

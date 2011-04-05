@@ -1,4 +1,4 @@
-module Campfirer
+module Firebot
   module Campfire
     def self.join_room
       post :join

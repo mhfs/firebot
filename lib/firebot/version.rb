@@ -1,3 +1,3 @@
-module Campfirer
+module Firebot
   VERSION = "0.0.1"
 end

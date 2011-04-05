@@ -1,4 +1,4 @@
-module Campfirer
+module Firebot
   class Runner
     COMMAND_MATCHER = /^!(\w+)/
 
@@ -15,8 +15,8 @@ module Campfirer
 
     def run
       if message["body"] =~ COMMAND_MATCHER
-        if Campfirer.plugins[$1]
-          Campfirer.plugins[$1].run(plugin_message(message["body"], $1))
+        if Firebot.plugins[$1]
+          Firebot.plugins[$1].run(plugin_message(message["body"], $1))
         else
           Campfire.speak("No plugin respond to #{$1}.")
         end

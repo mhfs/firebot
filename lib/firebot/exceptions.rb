@@ -1,3 +1,3 @@
-module Campfirer
+module Firebot
   UnauthorizedException = Class.new(StandardError)
 end

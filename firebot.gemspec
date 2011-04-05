@@ -1,18 +1,18 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "campfirer/version"
+require "firebot/version"
 
 Gem::Specification.new do |s|
-  s.name        = "campfirer"
-  s.version     = Campfirer::VERSION
+  s.name        = "firebot"
+  s.version     = Firebot::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Marcelo Silveira"]
   s.email       = "marcelo@mhfs.com.br"
-  s.homepage    = "https://github.com/mhfs/campfirer"
+  s.homepage    = "https://github.com/mhfs/firebot"
   s.summary     = "Extensible Campfire bot to integrate with other applications/services"
   s.description = "Extensible Campfire bot to integrate with other applications/services"
 
-  s.rubyforge_project = "campfirer"
+  s.rubyforge_project = "firebot"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

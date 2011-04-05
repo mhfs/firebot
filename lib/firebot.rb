@@ -4,16 +4,16 @@ require "daemons"
 require "thor"
 require "json"
 
-require "campfirer/settings"
-require "campfirer/exceptions"
-require "campfirer/campfire"
-require "campfirer/runner"
-require "campfirer/listener"
-require "campfirer/cli"
-require "campfirer/version"
-require "campfirer/plugin"
+require "firebot/settings"
+require "firebot/exceptions"
+require "firebot/campfire"
+require "firebot/runner"
+require "firebot/listener"
+require "firebot/cli"
+require "firebot/version"
+require "firebot/plugin"
 
-module Campfirer
+module Firebot
   def self.run
     EventMachine.run do
       Listener.connect(Settings.stream_settings)
@@ -30,4 +30,4 @@ module Campfirer
   end
 end
 
-require "campfirer/plugins/ping_pong"
+require "firebot/plugins/ping_pong"
