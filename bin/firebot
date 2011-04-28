@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 require "rubygems"
-require "campfirer"
+require "firebot"
 
-Campfirer::CLI.start
+Firebot::CLI.start
