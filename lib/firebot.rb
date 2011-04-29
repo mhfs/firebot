@@ -3,6 +3,7 @@ require "faraday"
 require "daemons"
 require "thor"
 require "json"
+require "yaml"
 
 require "firebot/settings"
 require "firebot/exceptions"

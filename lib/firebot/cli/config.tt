@@ -1,3 +1,3 @@
 account: "your_subdomain"
-path: "/room/your_room_id/live.json"
+room_id: "your_room_id"
 token: "your_api_token"
