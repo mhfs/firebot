@@ -1,6 +1,5 @@
 module Firebot
   class PingPong < Plugin
-
     trigger :pp
     command :ping, /ping/
     command :pong, /pong/

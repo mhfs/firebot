@@ -35,7 +35,7 @@ module Firebot
       end
 
       def daemon_exec(command)
-        Daemons.run_proc("firebot", {:ARGV => [command], :proc => daemon_proc}, &daemon_proc)
+        Daemons.run_proc("firebot", { :ARGV => [command] }, &daemon_proc)
       end
 
       def daemon_proc
