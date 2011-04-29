@@ -1,7 +1,17 @@
 module Firebot
   module Settings
     def self.all
-      @settings ||= YAML.load(File.read(File.expand_path(config_path))).to_hash
+      @settings ||= begin
+        options = {
+          "stream_host" => "streaming.campfirenow.com",
+          "stream_port" => "80",
+          "host"        => "campfirenow.com"
+        }
+        user_options = YAML.load(File.read(File.expand_path(config_path))).to_hash
+        options.merge!(user_options)
+        options["path"] = "/room/#{options["room_id"]}/live.json"
+        options
+      end
     end
 
     def self.[](key)
