@@ -2,7 +2,7 @@ require "twitter/json_stream"
 require "faraday"
 require "daemons"
 require "thor"
-require "json"
+require "yajl/json_gem"
 require "yaml"
 
 require "firebot/settings"
